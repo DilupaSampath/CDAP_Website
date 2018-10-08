@@ -1,77 +1,91 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Bootstrap Admin Theme v3</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- styles -->
-    <link href="css/styles.css" rel="stylesheet">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width-device-width, initial-scale=1">
+			<!--this sets the responsive layout-->
+			<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+			<title>Smart Scheduler</title>
+			<style>
+			html, body{
+  margin: 0 auto;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body class="login-bg">
-  	<div class="header">
-	     <div class="container">
-	        <div class="row">
-	           <div class="col-md-12">
-	              <!-- Logo -->
-	              <div class="logo">
-	                 <h1><a href="index.html">Bootstrap Admin Theme</a></h1>
-	              </div>
-	           </div>
-	        </div>
-	     </div>
-	</div>
+#header {
+	background: linear-gradient(rgba(0, 0, 75, 0.5), rgba(30, 0, 0, 0.5)), url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SAKGwKC/medical-background-with-loop_4p1uvboye__F0008.png);
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin: 0 auto;
+}
 
-	<div class="page-content container">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<div class="login-wrapper">
-			        <div class="box">
-			            <div class="content-wrap">
-			                <h6>Sign In</h6>
-			                <div class="social">
-	                            <a class="face_login" href="#">
-	                                <span class="face_icon">
-	                                    <img src="images/facebook.png" alt="fb">
-	                                </span>
-	                                <span class="text">Sign in with Facebook</span>
-	                            </a>
-	                            <div class="division">
-	                                <hr class="left">
-	                                <span>or</span>
-	                                <hr class="right">
-	                            </div>
-	                        </div>
-			                <input class="form-control" type="text" placeholder="E-mail address">
-			                <input class="form-control" type="password" placeholder="Password">
-			                <div class="action">
-			                    <a class="btn btn-primary signup" href="index.html">Login</a>
-			                </div>                
-			            </div>
-			        </div>
+h1, p {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 0.8;
 
-			        <div class="already">
-			            <p>Don't have an account yet?</p>
-			            <a href="signup.html">Sign Up</a>
-			        </div>
-			    </div>
-			</div>
-		</div>
-	</div>
+}
 
+h1 {
+	font-size: 60pt;
+	text-align: center;
+	line-height: .2em;
+}
 
+p {
+	font-size: 30pt;
+	text-align: center;
+	line-height: 1em;
+}
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
-</html>
+button {
+  padding: 12px 19px;
+  background:transparent;
+  color:#fff;
+  border: 2px solid white;
+  font-size: 15px;
+  border-radius: 0px;
+  transition: all .3s ease;
+}
+
+button:hover {
+  background: white;
+  color: black;  
+}
+@media (max-width: 600px) {
+  h1 {
+      font-size: 40pt;
+    }
+  p {
+    font-size: 20pt;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 364px) {
+  h1 {
+      font-size: 30pt;
+    }
+  p {
+    font-size: 15pt;
+    font-weight: 300;
+  }
+}</style>
+		<body>
+			<div id="header">
+				
+				<h1>Smart Scheduler<br><p>Management and Scheduling Tool For Hospitals</p></h1>
+		  <div class="button">
+			<button  ><a href="index.html">ENTER</a>  </button>
+		  </div>
+		</body>
+		</head>
+		</html>

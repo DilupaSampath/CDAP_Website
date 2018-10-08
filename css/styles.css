@@ -12,7 +12,9 @@ background-color: #cfd3deba;
   margin-right: 0px !important;
   margin-top: 30px;
 }
-
+ul>li>a{
+  color: black;
+}
 /* Footer */
 
 footer{
@@ -557,7 +559,14 @@ body {
   color: #666666;
   font-size: 18px;
 }
+.panel-heading{
+  background: #29294ef0; color: whitesmoke;
+}
 
+.content-box-header{
+  background: #423f3ef7;
+  color: whitesmoke;
+}
 .panel-heading>.panel-title, .content-box-header .panel-title {
     float: left;
     padding: 10px 15px;
@@ -630,11 +639,13 @@ body {
    }
    .sidebar, content-box{
       margin-bottom:30px;
+      background: linear-gradient(40deg,#0c0cf5ba,#303f9f3d)!important;
       width:100%;
       float:none;
       position:relative;
 	  
    }  
+   .sidebar
    .mainy{
       margin-left: 0px;
    }

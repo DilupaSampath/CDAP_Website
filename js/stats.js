@@ -104,16 +104,15 @@ doPlot("right");
 Morris.Bar({
     element: 'hero-bar',
     data: [
-        {device: '1', sells: 136},
-        {device: '3G', sells: 1037},
-        {device: '3GS', sells: 275},
-        {device: '4', sells: 380},
-        {device: '4S', sells: 655},
-        {device: '5', sells: 1571}
+        {device: 'Project Proposal', sells: 10},
+        {device: 'PPR Assessment', sells: 10},
+        {device: 'Progress Presentation I', sells: 50},
+        {device: 'Progress Presentation II', sells: 90},
+        {device: 'Final Assessment', sells: 100}
     ],
     xkey: 'device',
     ykeys: ['sells'],
-    labels: ['Sells'],
+    labels: ['Compleate'],
     barRatio: 0.4,
     xLabelMargin: 10,
     hideHover: 'auto',
@@ -125,10 +124,12 @@ Morris.Bar({
 Morris.Donut({
     element: 'hero-donut',
     data: [
-        {label: 'Direct', value: 25 },
-        {label: 'Referrals', value: 40 },
-        {label: 'Search engines', value: 25 },
-        {label: 'Unique visitors', value: 10 }
+        {label: 'Project Proposal', value: 10 },
+        {label: 'PPR Assessment', value: 6 },
+        {label: 'Progress Presentation I', value: 10 },
+        {label: 'Progress Presentation II', value: 18 },
+		      {label: 'Final Assessment', value: 16 },
+			        {label: 'Viva', value: 10 },
     ],
     colors: ["#30a1ec", "#76bdee", "#c4dafe"],
     formatter: function (y) { return y + "%" }
@@ -136,7 +137,7 @@ Morris.Donut({
 
 // Morris Donut Chart
 Morris.Donut({
-    element: 'hero-donut2',
+    element: 'hero-donutt1',
     data: [
         {label: 'Google', value: 25 },
         {label: 'Yahoo', value: 40 },
@@ -150,22 +151,22 @@ Morris.Donut({
 
 // Morris Line Chart
 var tax_data = [
-    {"period": "2013-04", "visits": 2407, "signups": 660},
-    {"period": "2013-03", "visits": 3351, "signups": 729},
-    {"period": "2013-02", "visits": 2469, "signups": 1318},
-    {"period": "2013-01", "visits": 2246, "signups": 461},
-    {"period": "2012-12", "visits": 3171, "signups": 1676},
-    {"period": "2012-11", "visits": 2155, "signups": 681},
-    {"period": "2012-10", "visits": 1226, "signups": 620},
-    {"period": "2012-09", "visits": 2245, "signups": 500}
+    {"period": "2018-04", "milestone": "Project Proposal", "marks": 10},
+    {"period": "2018-06", "milestone": "SRS/DD/PPR Assessment","marks": 6},
+    {"period": "2018-07", "milestone": "Progress Presentation I", "marks": 10},
+    {"period": "2018-09", "milestone": "Progress Presentation II", "marks": 18},
+    {"period": "2018-10", "milestone": "Final Assessment", "marks": 16},
+    {"period": "2018-11", "milestone": "Viva", "marks": 25}
 ];
 Morris.Line({
     element: 'hero-graph',
     data: tax_data,
-    xkey: 'period',
-    xLabels: "month",
-    ykeys: ['visits', 'signups'],
-    labels: ['Visits', 'User signups']
+    xkey: 'milestone',
+    xLabel: 'milestone',
+    ykeys: ['period', 'marks'],
+    labels: ['Date', 'marks'],
+	 parseTime: false,
+	 label: "alpha"
 });
 
 
