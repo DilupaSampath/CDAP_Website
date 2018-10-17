@@ -85,7 +85,7 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i> DOMAIN</a></li>
+                    <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i> HOME</a></li>
                     <li><a href="milestone.html"><i class="glyphicon glyphicon-calendar"></i> MILESTONE</a></li>
                     <li><a href="documents.html"><i class="glyphicon glyphicon-stats"></i> DOCUMENTS</a></li>
                   
@@ -104,7 +104,7 @@
 					<div class="col-md-12">
 						<div class="content-box-large">
 		  				<div class="panel-heading" style="background: #29294ef0; color: whitesmoke ">
-							<div class="panel-title" >DOMAIN</div>
+							<div class="panel-title" >HOME</div>
 							
 							<div class="panel-options">
 								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
@@ -120,7 +120,7 @@
 								  	<li class="active"><a href="#tab1" data-toggle="tab">LITERATURE SURVEY</a></li>
 									<li><a href="#tab2" data-toggle="tab">RESEARCH GAP</a></li>
 									<li><a href="#tab3" data-toggle="tab">RESEARCH PROBLEM</a></li>
-									<li><a href="#tab4" data-toggle="tab">MAIN OBJECTIVES</a></li>
+									<li><a href="#tab4" data-toggle="tab">OBJECTIVES</a></li>
 									<li><a href="#tab5" data-toggle="tab">COMPARISONS</a></li>
 								</ul>
 								 </div>
@@ -129,6 +129,7 @@
 								<div class="tab-content">
 								    <div class="tab-pane active" id="tab1">
 								      <form class="form-horizontal" role="form">
+									  
 										 <p>
 												Along with the growth of knowledge and technology large number of methods and new modules were developed not only to identify the disease, also for prediction of Dengue outbreak. A productive prediction module should be able to detect the unusual occurrences of Dengue fever and it will help to control the rise of the endemic in specified area.
 												One of the applications that use time series forecasting techniques is the system to model emergency medical system calls in Calgary, Alberta. The objective of this research was to offer simple and effective models that could be used for forecasting daily and hourly call volumes. For this they have used three main approaches, standard regression ignoring dependencies, regression models with correlated residuals, and a third approach doubly-seasonal ARIMA.
@@ -166,6 +167,15 @@ Nurses being insufficient  according to the number of patients
 										</fieldset>
 								    </div>
 									<div class="tab-pane" id="tab4">
+									<div class="content-box-header panel-heading" style="background: #29294ef0; color: whitesmoke ">
+	  					<div class="panel-title ">Main Objective</div>
+						
+						<div class="panel-options">
+							<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+							<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+						</div>
+		  			</div>
+									
 										<fieldset>
 											
 				
@@ -191,67 +201,8 @@ We’ve implemented each model using two algorithms. We’ve conducted several t
 											<li>Determine what are the most important parameters which affect the output of optimizing algorithms and use them in a proper way </li>
 											<li>Use test data and check the accuracy  </li>
 										  </ul>
-									</div>
-									<div class="tab-pane" id="tab5">
-											<fieldset>
-																									
-											
-											<h3>Prediction Model</h3>
-											<p style="width:89%">
-		We compared both prediction models considering accuracy and time taken to train both models. 
-		According to our test results we’ve came to the conclusion that RNN with LSTM gives better accuracy than ARIMA.
-										</p>
-											<div class="container">
-												<div class="row" style="width: 90%;">
-													<div class="col-md-6">
-
-															<img src="./images/cmp/pred1.png" alt="">
-															
-													</div>
-													<div class="col-md-6">
-															
-															<img src="./images/cmp/pred2.png" alt="">
-																												</div>
-												</div>
-											</div>
-										
-											  <h3>Optimizing model</h3>
-											 <p style="width:89%">We have conducted experiments to measure the performances of our optimization algorithms using the statistics collected from IDH. With the real data sets, our results show that, GA and ILS can decide the optimal allocations dynamically in the order of seconds. Also, the results show that the GA approach is much efficient and faster than the ILS approach.</p> 
-											 <div class="container">
-													<div class="row" style="width: 90%;">
-														<div class="col-md-6">
-	
-																<img src="./images/cmp/opt1.png" alt="">
-																
-														</div>
-														<div class="col-md-6">
-																
-																<img src="./images/cmp/opt2.png" alt="">
-																													</div>
-													</div>
-												</div>
-											</fieldset>
-										</div>
-									<ul class="pager wizard">
-										<li class="previous first disabled" style="display:none;"><a href="javascript:void(0);">First</a></li>
-										<li class="previous disabled"><a href="#tab2">Previous</a></li>
-										<li class="next last" style="display:none;"><a href="javascript:void(0);">Last</a></li>
-									  	<li class="next"><a href="javascript:void(0);">Next</a></li>
-									</ul>
-								</div>	
-							</div>
-		  				</div>
-		  			</div>
-					</div>
-				</div>
-
-		  
-		  
-		  	
-
-		  	
-			
-			<div class="row">
+										  
+										  <div class="row">
 		  		<div class="col-md-12 panel-warning">
 		  			<div class="content-box-header panel-heading" style="background: #29294ef0; color: whitesmoke ">
 	  					<div class="panel-title ">SPECIFIC OBJECTIVES</div>
@@ -316,6 +267,47 @@ We’ve implemented each model using two algorithms. We’ve conducted several t
 							  
 							  <p>We’ve implemented Prediction model with ARIMA and tuned it with different parameters to achieve better accuracy than RNN. Several experiments were conducted to select the most appropriate ARIMA model for further comparison with RNN.</p>
 							<br /><br />
+							<h4>ARIMA model</h4>
+							<p>Time series models are used for predicting or forecasting the future behavior of variables. These models account for the fact that data points taken over time may have an internal structure that should be accounted for. As a result, standard regression techniques cannot be applied to time series data and methodology has been developed to decompose the trend, seasonal and cyclical component of the series. Modelling the dynamic path of a variable can improve forecasts since the predictable component of the series can be projected into the future. Time Series is an ordered sequence of values, y1, y2,...,yT of a quantitative characteristic collected over time.</p>
+							<ul>
+							<li>Most often, the observations are made at regular time intervals</li>
+							<li>The essential quality of the series is the order of observations according to the time variable.</li>
+							<li>This makes it distinct from common data problems, where there is no natural ordering of the observations.</li>
+							
+							</ul>
+							<p>Time Series Analysis accounts for</p>
+							<ul>
+							
+							<li>Understanding the underlying structure that produced the observed data</li>
+							<li>Formulating a model</li>
+							<li>Proceed to forecasting</li>
+							</ul>
+							<p>There are mainly two types of time series of models.</p>
+							<ul>
+							<li>Classical Models</li>
+							<li>Probabilistic Model</li>
+							
+							</ul>
+							<p>Classical Models divided into two types.</p>
+							<ul>
+							<li>Additive Models</li>
+							<li>Multiplicative Models</li>
+							
+							</ul>
+							<h5>Preparing the data set</h5>
+							<p>Data preparation consists of three levels.</p>
+							<u>Level 1</u>
+							<p>Divide data into two sections as “training set” and ”testing set”. Fit the model using training set and test the model using testing set.</p>
+							<p>The training set should be 60 percent of the data set and the test set should be 40 percent of the data set.</p>
+							<u>Level 2</u>
+							<p>In this level we mainly focus on grouping the data set under week and grouping the result again under city. There columns in the data set is mentioned below. Fields [ ‘patient_name’,’race’,’gender’,’age’,’level’,’date’,’ward’,’district’,’city’,’address’,’disease’ ]
+First we have to filter the data set and only retrieve the data of dengue patients.</p>
+<u>Level 3</u>
+<p>In this level, data is analysed to conclude whether it is stationary or not. To fit to a time series model, the data should be stationary.
+A stationary series is roughly horizontal, variance constant, no patterns predictable in the long	</p>
+<h5>Implementation of ARIMA model</h5>
+<p>The parameter selection of the ARIMA model was done by grid search. The goal was to find the optimal set of parameters that yields the best performance for our model.</p>
+<p>Using same method, RMSE, Elapsed Time, r2 Score, MAE Value are found. The model which returned the lowest error was taken as the best ARIMA model.</p>
 						</div>
 					  </div>
 					  </div>
@@ -357,12 +349,30 @@ We’ve implemented each model using two algorithms. We’ve conducted several t
 									<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
 								</div>
 				  			</div>
+							
 				  			<div class="content-box-large box-with-header">
 							  <p>Objective of implementing prediction model with RNN is to make predictions with better accuracy than the ARIMA model. </p>
 							  <p>We’ve used RNN with LSTM to implement the model and several experiments were conducted to select best RNN model and compare it with ARIMA model.</p>	
 					  		
 								<br /><br />
+								<h4>RNN model</h4>
+							<p>Recurrent Neural Network with Long Short-Term memory is used to develop the model. Designing process was carried out through four stages as follows, Data Preparation, Model Development, Model Forecast and Model evaluation.</p>
+		<br /><br />
+	<h5>Data Preparation</h5>						
+						<p>
+						First step is to convert time series dataset into supervised learning problem. Sliding Window method is used to conversion and size of the lag is 1.Last step is to transform data set into preferred scale. Hyperbolic tangent (tanh) is set as the Activation Function of LSTM which expect all the data must be in the range of [-1, 1].
+Model Development: Keras library is used to implement RNN model and TensorFlow library is selected as the back end of Keras.We’ve set “stateful” argument to “True” since it enables trained model to remember and learn over long sequences. Performance of LSTM is highly dependable on three parameters.</p>	
+						<ul>
+						<li>epochs : How many times the network should be scanned repeatedly</li>
+						<li>batch_size: dataset should be divided into sub parts, since network can’t handle entire dataset at once. batch_size refers to the size of a sub set of data</li>
+						<li>pneurons : define the number of neurons network should have parameters were set as follows in the beginning</li>
+						<li>epochs – 3000, batch_size – 1, neurons -4</li>
+						<br><br>
+						<p>Then model tuning process was started by changing parameters. Efficiency and accuracy of the model was stable when number of neurons is 1 and number of epochs is 10.
+10 models were developed under the conditions obtained from model tuning process. “mean_squared_error” was passed as the loss function and Adam algorithm was used as the optimizing method to train the model.</p>
+</ul>						
 							</div>
+
 						  </div>
 				</div>
 			
@@ -412,6 +422,26 @@ We’ve implemented each model using two algorithms. We’ve conducted several t
 									<li>Generate a report which provides the minimum number of nurses that should be available for a
 										particular period of time.</li>
 								  </ul>  
+								  <h4>Genetic Algorithm</h4>
+								  <p>Genetic algorithm is a search heuristic that is based on Charles Darwin’s theory of natural evolution. This algorithm reflects the procedure of natural selection where the fittest individuals are selected for reproduction to produce offspring of the next generation. Simply it chooses individuals from the current population and uses them as parents to produce the children for the next generation. Over succeeding generations, the population evolves towards an optimal solution.</p>
+							<p>To achieve the optimization of healthcare staff scheduling, we picked genetic algorithm because;</p>
+							<ul>
+							<li>Compared to a classical optimizing algorithm, genetic algorithm generates a population of points at each iteration and the best point in a population is generated as the optimal 
+solution while a classical optimizing algorithm generates a single point at each iteration, and sequence of points are generated as an optimal solution.</li>
+							<li>Faster and more efficient as compared to the classical traditional algorithms.</li>
+							<li>Gets an answer to the problem at all times, which improves over the time.</li>
+							<li>Useful when the search space is bulky and when a large number of parameters are involved.</li>
+
+							
+							</ul>
+<p>Our GAs driven trough under five key steps</p>
+<ul>
+<li>Generate an initial population F(0) with n solutions</li>
+<li>Compute the fitness value u(f) for each individual solution f in the current population F(t)</li>
+<li>Generate the next population F(t+1), by selecting i best solutions from F(t)</li>
+<li>Produce offspring by applying the genetic operators to population F(t+1)</li>
+<li>Repeat from Step 2 until a satisfying solution.The process is continued until x number of generations are explored and the best solution (the solution with minimum fitness value) is selected as the optimal number of nurses for wards.	</li>
+</ul>
 							</div>
 						  </div>
 						  <div class="col-md-12">
@@ -449,18 +479,35 @@ We’ve implemented each model using two algorithms. We’ve conducted several t
 								</div>
 				  			</div>
 				  			<div class="content-box-large box-with-header">
-				  				
-					  			<p>Algorithm
+							<p>Algorithm
 									Instead of generating nurses schedules manually, “Smart Scheduler” is able to automate the
 									generating of nurses schedules by considering the factors; Total number of nurses in the hospital,
 									Total number of patients in the hospital, Future Patient count in a ward and whether nurse is an
 									OT or a normal shift nurse. Other benefits achieved from “Smart Scheduler”;</p>
 								<br /><br />
+				  				<h4>Iterated Local Search</h4>
+								<p>Iterated Local Search is more effective and quickly explore the optimal solutions and it is able to find a highly accurate optimum by using a few number of iterations. This algorithm is able to keep track on its current state (current solution) and move to neighboring states (neighborhood) with the results of current state. Then it will repeat the same process if the neighboring state get better than the current state until it gets the best solution.</p>
+					  			
 								<ul>
 									<li>Algorithm can return a schedule in few seconds</li>
 									<li>Nurses are able to apply for leaves</li>
 									<li>Easy to have an idea of free nurses</li>
-								  </ul>  
+								  </ul> 
+								<h5>collecting data</h5>
+								<p>For the purpose of this research to optimize the scheduling of the hospital staff, interviews and discussions with the nurses and doctors were held. Personal interviews and telephone discussions with the hospital staff were made to gather the monthly patient and nurse data, ward details of IDH hospital.
+Additionally, personal discussions and interviews with doctors and nurses outside of the IDH hospital were held to analyze the collected data for scheduling purposes.</p>
+							<h5>Application of ILS algorithm</h5>
+							<p>Iterated Local Search algorithm is used to allocate nurses to wards in an efficient way by considering two main factors such as;</p>
+							<ul>
+							<li>Number of patients in a ward</li>
+							<li>Number of nurses in the hospital</li>
+							
+							</ul>
+							<p>The ILS starts with an initial solution. We have used two approaches to generate the initial solution: (1) best fit and (2) random fit. In the best fit approach, the nurses are allocated to wards according to the requirement of each ward (number of nurses required by each ward). Wards are considered sequentially (by the ward number), and nurses are allocated starting from first wards, second ward etc. Therefore, the last wards might not get nurses allocated at all. On the other hand, with the random fit approach, the nurses are allocated to wards randomly, without considering any factors.
+Next, the initial solution goes through a perturbation process to generate a new solution. In the perturbation process, each nurse is selected sequentially and moved from the allocated ward to another ward. Each of this move generates a new solution.
+Each new solution will be evaluated using the heurist function. We have used the previously mentioned fitness function as the heuristic function for ILS. If the new solution gives a better fitness value, then the old solution is discarded, and new solution is considered as the current solution.
+23
+The process is continued until x number of iterations are explored and the best Solution (the solution with minimum fitness value) is selected as the number of tourists that can be accommodated for each location.</p>
 							</div>
 						  </div>
 						  <div class="col-md-12">
@@ -491,6 +538,74 @@ We’ve implemented each model using two algorithms. We’ve conducted several t
 		  	
 		  	</div>
 
+										  
+										  
+										  
+									</div>
+									
+									
+									
+									
+									<div class="tab-pane" id="tab5">
+											<fieldset>
+																									
+											
+											<h3>Prediction Model</h3>
+											<p style="width:89%">
+		We compared both prediction models considering accuracy and time taken to train both models. 
+		According to our test results we’ve came to the conclusion that RNN with LSTM gives better accuracy than ARIMA.
+										</p>
+											<div class="container">
+												<div class="row" style="width: 90%;">
+													<div class="col-md-6">
+
+															<img src="./images/cmp/pred1.png" alt="">
+															
+													</div>
+													<div class="col-md-6">
+															
+															<img src="./images/cmp/pred2.png" alt="">
+																												</div>
+												</div>
+											</div>
+										
+											  <h3>Optimizing model</h3>
+											 <p style="width:89%">We have conducted experiments to measure the performances of our optimization algorithms using the statistics collected from IDH. With the real data sets, our results show that, GA and ILS can decide the optimal allocations dynamically in the order of seconds. Also, the results show that the GA approach is much efficient and faster than the ILS approach.</p> 
+											 <div class="container">
+													<div class="row" style="width: 90%;">
+														<div class="col-md-6">
+	
+																<img src="./images/cmp/opt1.png" alt="">
+																
+														</div>
+														<div class="col-md-6">
+																
+																<img src="./images/cmp/opt2.png" alt="">
+																													</div>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									<ul class="pager wizard">
+										<li class="previous first disabled" style="display:none;"><a href="javascript:void(0);">First</a></li>
+										<li class="previous disabled"><a href="#tab2">Previous</a></li>
+										<li class="next last" style="display:none;"><a href="javascript:void(0);">Last</a></li>
+									  	<li class="next"><a href="javascript:void(0);">Next</a></li>
+									</ul>
+								</div>	
+							</div>
+		  				</div>
+		  			</div>
+					</div>
+				</div>
+
+		  
+		  
+		  	
+
+		  	
+			<!-- start -->
+			
 
 		  	
 		  </div>
